@@ -1,0 +1,15 @@
+-I created groups and relations of the groups, groups have many to many relations with users, and
+one to many relations with posts, so a user can have their own posts, and groups can have their own posts
+I am not exactly sure if this is the right way to do it, but this is the only this that came to my mind
+
+-I need to complete the CRUD actions of groups, right now you can only create groups, I need to edit the create
+function of posts in order to insert posts into groups, but, how will I know which user posted the post? I'm not going to
+get it from the URL, but get it from the jwt since the user has to be signed in to create a post anyway.
+so, when creating a post, the post should be filled like this:
+
+CONTENT: "example content"
+USER: "the userId you will get from the jwt"
+GROUP: "if not null, then you will get from params"
+
+something like this i don't really know I have never done this before
+Jenkins calisiyo
